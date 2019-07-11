@@ -13,18 +13,22 @@
     <title>OpenLayers example</title>
   </head>
   <body>
-    <div>
-    </div>
-    <h2>Welcome to Ofa's page</h2>
-   <div id="map" class="map"></div>
-   <script type="text/javascript">
-     var map = new ol.Map({
-       target: 'map',
-       layers: [
-         new ol.layer.Tile({
-           source: new ol.source.OSM()
-         })
-       ],
+    <h2>My Map</h2>
+    <div id="map" class="map"></div>
+    <script type="text/javascript">
+      var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          })
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([37.41, 8.82]),
+          zoom: 4
+        })
+      });
+    </script>
     <!-- <p>Javascript can change HTML attribute values.</p> -->
 
     <button>HI</button>
