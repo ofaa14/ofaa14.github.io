@@ -2,22 +2,40 @@
 <html>
   <head>
     <link rel="stylesheet" href="ofas_world.css">
-
+    <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css" type="text/css">
+    <style>
+      .map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
+    <title>OpenLayers example</title>
   </head>
   <body>
     <div>
     </div>
     <h2>Welcome to Ofa's page</h2>
+   <div id="map" class="map"></div>
+   <script type="text/javascript">
+     var map = new ol.Map({
+       target: 'map',
+       layers: [
+         new ol.layer.Tile({
+           source: new ol.source.OSM()
+         })
+       ],
     <!-- <p>Javascript can change HTML attribute values.</p> -->
 
     <button>HI</button>
 
-    <button onclick="document.getElementById('myImage').src='/light_on.png'">Turn on the light</button>
+    <button onclick="document.getElementById('myImage').src='light_on.png'">Turn on the light</button>
 
     <img id="myImage" src="https://i.imgur.com/an20Ikr.png" style="width:150px">
 
-    <button onclick="document.getElementById('myImage').src='/light_off.png'">Turn off the light</button>
+    <button onclick="document.getElementById('myImage').src='light_off.png'">Turn off the light</button>
 
+    <img id="myImage" src="https://i.imgur.com/zWCGgPB.png" style="width:150px">
 
     <h1>
       Ofa&apos;s World
