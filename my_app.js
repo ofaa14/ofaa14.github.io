@@ -31,4 +31,4 @@ function panHome() {
   });
 }
 
-window.onload = intl;
+window.onload = init;
