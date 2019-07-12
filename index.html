@@ -17,7 +17,7 @@
   </head>
   <body>
     <h2>My Map</h2>
-    <div id="map" class="map"></div>
+    <div id="map" class="map">
     <script type="text/javascript">
       var map = new ol.Map({
         target: 'map',
@@ -32,6 +32,9 @@
         })
       });
     </script>
+    </div>
+
+    <button type="button" name="button" onclick="panHome()">panHome</button>
     <!-- <p>Javascript can change HTML attribute values.</p> -->
 
     <button>HI</button>

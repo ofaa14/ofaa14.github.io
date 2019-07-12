@@ -4,8 +4,8 @@ var intialLocation;
 var london;
 
 function init(){
-  initialLocation = ol.proj.fromLonLat([41.043316, 28.862457])
-  london = ol.proj.fromLonLat([-0.12755, 51.507222]);
+  initialLocation = ol.proj.fromLonat([41.043316, 28.862457])
+  london = ol.proj.fromLonat([-0.12755, 51.507222]);
 
   view = new ol.View({
     center: intialLocation,
