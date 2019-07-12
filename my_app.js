@@ -1,6 +1,34 @@
-document.getElementById(id)
+var view;
+var map;
+var intialLocation;
+var london;
 
-var name, age, height;    // Statement 1
-name = "Ofa Ahofono";          // Statement 2
-age = 17;          // Statement 3
-height = 5.9;      // Statement 4
+function init() {
+  initialLocation = ol.proj.fromLonat([41.043316, 28.862457])
+  london = ol.proj.fromLonat([-0.12755, 51.507222]);
+
+  view = new ol.View({
+    center: intialLocation,
+    zoom: 6
+  });
+
+  map = new ol.Map({
+    target: 'map',
+    layers: [
+      new ol.layer.Tile({
+        source: new ol.source.OSM()
+      })
+    ],
+    loadTilesWhileAnimating: true,
+    view: view
+  });
+}
+
+function panHome() {
+  view.animate({
+    center: london,
+    duration: 2000
+  });
+}
+
+window.onload = intl;
