@@ -3,7 +3,7 @@ var map;
 var intialLocation;
 var london;
 
-function init() {
+function init(){
   initialLocation = ol.proj.fromLonat([41.043316, 28.862457])
   london = ol.proj.fromLonat([-0.12755, 51.507222]);
 
@@ -31,4 +31,4 @@ function panHome() {
   });
 }
 
-window.onload = intl;
+window.onload = init;
