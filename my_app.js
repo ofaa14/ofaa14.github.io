@@ -23,7 +23,7 @@ function init(){
     view: view
   });
 }
-
+function elasticToMoscow()
 function panHome() {
   view.animate({
     center: london,

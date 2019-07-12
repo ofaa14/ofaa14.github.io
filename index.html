@@ -18,56 +18,11 @@
   <body>
     <h2>My Map</h2>
     <div id="map" class="map">
-    <!-- <script type="text/javascript">
-      var map = new ol.Map({
-        target: 'map',
-        layers: [
-          new ol.layer.Tile({
-            source: new ol.source.OSM()
-          })
-        ],
-        view: new ol.View({
-          center: ol.proj.fromLonLat([37.41, 8.82]),
-          zoom: 4
-        })
-      });
-    </script> -->
+
     </div>
 
     <button type="button" name="button" onclick="panHome()">panHome</button>
     <!-- <p>Javascript can change HTML attribute values.</p> -->
-    <script>
-
-      // The following example creates a marker in Stockholm, Sweden using a DROP
-      // animation. Clicking on the marker will toggle the animation between a BOUNCE
-      // animation and no animation.
-
-      var marker;
-
-      function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 13,
-          center: {lat: 59.325, lng: 18.070}
-        });
-
-        marker = new google.maps.Marker({
-          map: map,
-          draggable: true,
-          animation: google.maps.Animation.DROP,
-          position: {lat: 59.327, lng: 18.067}
-        });
-        marker.addListener('click', toggleBounce);
-      }
-
-      function toggleBounce() {
-        if (marker.getAnimation() !== null) {
-          marker.setAnimation(null);
-        } else {
-          marker.setAnimation(google.maps.Animation.BOUNCE);
-        }
-      }
-    </script>
-
     <button>HI</button>
 
     <button onclick="document.getElementById('myImage').src='light_on.png'">Turn on the light</button>
@@ -119,6 +74,8 @@
       <div class="column">
         <img src="https://images.unsplash.com/photo-1522586301611-8f02bf752230?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80" alt="Patagonia" style="width:60%">
 
+      </div>
+      </div>
       </div>
       <div class="column">
         <img src="" alt="" style="width:100%">
